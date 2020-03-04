@@ -7,11 +7,11 @@ import "./Comment.css";
 
 const CommentSection = props => {
 
-  [comments] = useState(props.comments)
+  const [comments, setComments] = useState(props.comments)
 
   return (
     <div>
-      {props.comments.map((cmt, index)=> 
+      {comments.map((cmt, index)=> 
        <Comment key={index} comment={cmt}/>
       )}
 

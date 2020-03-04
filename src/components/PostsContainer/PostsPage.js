@@ -8,11 +8,11 @@ import dummyData from "../../dummy-data";
 // import data 
 
 const PostsPage = () => {
-[post] = useState(dummyData);
+const [data, setData] = useState(dummyData);
   // set up state for your data
   return (
     <div className="posts-container-wrapper">
-      {dummyData.map((igPost,index) =>(
+      {data.map((igPost,index) =>(
        <Post key={index} post={igPost} />
       ))};
     </div>

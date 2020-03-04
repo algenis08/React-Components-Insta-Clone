@@ -8,9 +8,11 @@ import "./Posts.css";
 
 // pass props in this file to
 const Post = props => {
-  [likes, setLikes] = useState(props.Post.likes);
+  
+ const [likes, setLikes] = useState(props.post.likes);
     
   const likesUpdate = () => {
+
   setLikes (likes => likes + 1);
   }
   return (
